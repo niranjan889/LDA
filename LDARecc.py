@@ -94,19 +94,17 @@ class LDA:
 
 def lda_learning(lda, iteration):
     pre_perp = lda.perplexity()
-#     print "initial perplexity=%f" % pre_perp
     for i in range(iteration):
         print i
         lda.inference()
         perp = lda.perplexity()
-#         print "-%d p=%f" % (i + 1, perp)
         if pre_perp:
             if pre_perp < perp:
-#                 print 'done'
                 break
             else:
                 pre_perp = perp
     lda.write_data()      
+    
 def train(data):
     
     data = np.load(data)
