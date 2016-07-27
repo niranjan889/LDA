@@ -123,9 +123,9 @@ def train(data):
     lda = LDA(n_topics, alpha, beta, train_data, tot_itms)
     lda_learning(lda, iteration)
     
-# function that calculates the recommended score
+
 def get_recc_score():
-    
+    """ function that calculates the recommended score """
     rec_f = open('output/recc_scores_lda.mat','w')
     p_z = np.load('output/lda_topic_cnt_f.mat')
     p_u_z = np.load('output/lda_usr_tp_cnt_f.mat')
