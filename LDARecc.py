@@ -95,6 +95,7 @@ class LDA:
         
 
 def lda_learning(lda, iteration):
+    """Check the perplexity scores to decide when to stop """
     pre_perp = lda.perplexity()
     for i in range(iteration):
         print i
