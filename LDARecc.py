@@ -66,6 +66,7 @@ class LDA:
         return self.n_z_t / self.n_z[:, np.newaxis]
 
     def perplexity(self, docs=None):
+        """get the perplexity score for the iteration"""
         if docs == None: docs = self.docs
         phi = self.worddist()
         log_per = 0
