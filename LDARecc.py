@@ -146,9 +146,8 @@ def get_recc_score():
     np.save(rec_f,recc_items)
     print 'finished calculating the recommended scores'
 
-# function to calcualte the recommendation performance of LDA
 def calc_LDA_performance(data,topk=2):
-    
+    """function to calcualte the recommendation performance of LDA """    
     precisions = []
     recalls = []
     # get the test data
