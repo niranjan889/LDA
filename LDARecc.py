@@ -113,8 +113,8 @@ def train(data):
     data = np.load(data)
     alpha = 0.5
     beta = 0.5
-    n_topics = 10
-    iteration = 30
+    n_topics = 10   # no. of topics
+    iteration = 30  # no. of iterations for algorithm
     train_data = []
     tot_itms = data.shape[1]
     for row in data:
