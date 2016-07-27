@@ -81,7 +81,7 @@ class LDA:
         return np.exp(log_per / N)
     
     def write_data(self):
-        
+        """ save the obtained matrices"""
         tp_cnt_f = open('output/lda_topic_cnt_f.mat','w')
         usr_tp_cnt_f = open('output/lda_usr_tp_cnt_f.mat', 'w')
         itm_tp_cnt_f = open('output/lda_itm_tp_cnt_f.mat','w')
