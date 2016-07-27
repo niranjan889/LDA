@@ -181,7 +181,6 @@ def calc_LDA_performance(data,topk=2):
 
 if __name__ == "__main__":
     
-#     create_data()
     trains = ['input/train1.mat']
     tests = ['input/test1.mat']
     for dat in range(len(trains)):
