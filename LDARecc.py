@@ -8,13 +8,13 @@ import numpy as np
 import sys
 import os
 from multiprocessing import Pool
-np.random.seed(0)
+np.random.seed(0)   #Set the seed value to get the same random values each time
 class LDA:
     def __init__(self, K, alpha, beta, docs, V, smartinit=True):
         self.K = K
         self.alpha = alpha # parameter of topics prior
         self.beta = beta   # parameter of words prior
-        self.docs = docs
+        self.docs = docs    # parameter of documents prior
         self.V = V
 
         self.z_m_n = [] # topics of words of documents
