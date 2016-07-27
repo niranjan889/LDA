@@ -14,7 +14,7 @@ class LDA:
         self.K = K
         self.alpha = alpha # parameter of topics prior
         self.beta = beta   # parameter of words prior
-        self.docs = docs    # parameter of documents prior
+        self.docs = docs   # parameter of documents prior
         self.V = V
 
         self.z_m_n = [] # topics of words of documents
@@ -23,6 +23,7 @@ class LDA:
         self.n_z = np.zeros(K) + V * beta    # word count of each topic
 
         self.N = 0
+        # enumerate through every document
         for m, doc in enumerate(docs):
             self.N += len(doc)
             z_n = []
