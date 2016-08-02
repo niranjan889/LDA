@@ -93,7 +93,6 @@ class LDA:
         # word count of each topic and vocabulary
         np.save(itm_tp_cnt_f,self.n_z_t)
         print 'done writing outputs'
-        
 
 def lda_learning(lda, iteration):
     """Check the perplexity scores to decide when to stop """
