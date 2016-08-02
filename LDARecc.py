@@ -155,7 +155,6 @@ def calc_LDA_performance(data,topk=2):
     recc_scores = np.load('output/recc_scores_lda.mat')
     
     for i,j in enumerate(recc_scores):
-        
         grn_truth = test_data[i]
         # get the total liked items that were marked off from the training set
         tot_likd_itms = len(np.transpose(np.nonzero(grn_truth)))  
