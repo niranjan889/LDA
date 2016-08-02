@@ -122,7 +122,6 @@ def train(data):
         train_data.append(n_zero_vals) 
     lda = LDA(n_topics, alpha, beta, train_data, tot_itms)
     lda_learning(lda, iteration)
-    
 
 def get_recc_score():
     """ function that calculates the recommended score """
