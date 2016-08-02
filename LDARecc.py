@@ -184,4 +184,3 @@ if __name__ == "__main__":
         train(trains[dat])
         get_recc_score()
         calc_LDA_performance(tests[dat])
-        
