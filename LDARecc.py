@@ -176,7 +176,6 @@ def calc_LDA_performance(data,topk=2):
     print avg_prec
     print avg_rec
 
-
 if __name__ == "__main__":
     
     trains = ['input/train1.mat']
