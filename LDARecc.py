@@ -4,10 +4,11 @@ Created on 2016-03-16
 @author: Niranjan
 '''
 
-import numpy as np
 import sys
 import os
+import numpy as np
 from multiprocessing import Pool
+
 np.random.seed(0)   #Set the seed value to get the same random values each time
 class LDA:
     def __init__(self, K, alpha, beta, docs, V, smartinit=True):
